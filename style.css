@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&display=swap');
+body { 
+    margin:0;
+}
+
+header {
+    margin: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.container .left-side {
+    margin-right: 200px;
+}
+.container .left-side img {
+    width: 500px;
+    height:500px;
+}
+
+.container .right-side {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .right-side h1 {
+    font-size:40px;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+.container .right-side p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+}
+.container .right-side a {
+    text-decoration: none;
+    background-color: #333;
+    color:#FFF;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    
+}
+.container .right-side a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    color:#999;
+    font-size: 16px;
+}
+footer a {
+    text-decoration: none;
+    color:#999;
+    margin-left: 3px;
+}
+footer a:hover {
+    color:#333;
+}
+footer:hover {
+    color: #333;
+}
+
+@media( max-width: 1060px) {
+    .container .left-side img{
+        width: 400px;
+        height: 400px;
+    }
+    .container .right-side h1{
+        font-size:29px;
+    }
+    .container .right-side p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 870px) {
+    .container{
+        flex-direction: column;
+    }
+    .container .left-side img {
+        width: 500px;
+        height: 500px;
+        margin-left: 220px;
+    }
+    .container .right-side a{
+        width: 150px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px) {
+    .container .left-side img{
+        width: 300px;
+        height: 300px;
+    }
+    .container .right-side a{
+        width: 150px;
+        font-size: 12px;
+    }
+}
